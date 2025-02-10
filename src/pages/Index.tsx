@@ -11,7 +11,7 @@ const Index = () => {
       <nav className="fixed w-full z-50 px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link to="/" className="text-white">
-            <img src="/lovable-uploads/8e09ae26-80fc-4774-b436-03c2e773d06c.png" alt="RAY CLUB" className="h-16" />
+            <h1 className="text-2xl font-bold text-neon">RAY CLUB</h1>
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
@@ -44,9 +44,9 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/8e09ae26-80fc-4774-b436-03c2e773d06c.png" 
-                alt="Trainer" 
-                className="w-full object-cover"
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                alt="Fitness Training" 
+                className="w-full object-cover rounded-lg"
               />
             </div>
           </div>
