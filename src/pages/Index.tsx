@@ -1,11 +1,67 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-black">
+      {/* Navigation */}
+      <nav className="fixed w-full z-50 px-6 py-4">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <Link to="/" className="text-white">
+            <img src="/lovable-uploads/8e09ae26-80fc-4774-b436-03c2e773d06c.png" alt="RAY CLUB" className="h-16" />
+          </Link>
+          
+          <div className="hidden md:flex items-center gap-8">
+            <Link to="/programs" className="nav-link">PROGRAMS</Link>
+            <Link to="/testimonials" className="nav-link">TESTIMONIALS</Link>
+            <Link to="/contact" className="nav-link">CONTACT</Link>
+            <button className="neon-button">
+              SIGN IN FOR MEMBERS
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <main className="pt-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center min-h-[80vh]">
+            <div>
+              <h2 className="text-neon text-xl md:text-2xl mb-4">WELCOME TO THE</h2>
+              <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight">
+                MOST WANTED
+                <br />
+                ONLINE PERSONAL
+                <br />
+                TRAINING
+              </h1>
+              <button className="neon-button text-lg">
+                JOIN NOW
+              </button>
+            </div>
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/8e09ae26-80fc-4774-b436-03c2e773d06c.png" 
+                alt="Trainer" 
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {/* Marquee */}
+      <div className="marquee-container mt-12">
+        <div className="marquee-content py-4 text-black font-bold">
+          <span className="mx-8">NEW VIDEOS DAILY</span>
+          <span className="mx-8">BEGINNERS FRIENDLY</span>
+          <span className="mx-8">LIVE CONSULTANCY</span>
+          <span className="mx-8">20+ TRAINERS</span>
+          <span className="mx-8">TRAIN ANYWHERE</span>
+        </div>
       </div>
     </div>
   );
