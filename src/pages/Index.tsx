@@ -11,14 +11,14 @@ const Index = () => {
       <nav className="fixed w-full z-50 px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link to="/" className="text-white">
-            <h1 className="text-2xl font-bold text-neon">RAY CLUB</h1>
+            <h1 className="text-3xl font-extrabold text-neon tracking-wider">RAY CLUB</h1>
           </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/programs" className="nav-link">PROGRAMS</Link>
-            <Link to="/testimonials" className="nav-link">TESTIMONIALS</Link>
-            <Link to="/contact" className="nav-link">CONTACT</Link>
-            <button className="neon-button">
+            <Link to="/programs" className="nav-link font-bold tracking-wide">PROGRAMS</Link>
+            <Link to="/testimonials" className="nav-link font-bold tracking-wide">TESTIMONIALS</Link>
+            <Link to="/contact" className="nav-link font-bold tracking-wide">CONTACT</Link>
+            <button className="neon-button font-extrabold tracking-wide">
               SIGN IN FOR MEMBERS
             </button>
           </div>
@@ -30,23 +30,23 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center min-h-[80vh]">
             <div>
-              <h2 className="text-neon text-xl md:text-2xl mb-4">WELCOME TO THE</h2>
-              <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight">
+              <h2 className="text-neon text-xl md:text-2xl mb-4 font-extrabold tracking-wider">WELCOME TO THE</h2>
+              <h1 className="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
                 MOST WANTED
                 <br />
                 ONLINE PERSONAL
                 <br />
                 TRAINING
               </h1>
-              <button className="neon-button text-lg">
+              <button className="neon-button text-lg font-extrabold tracking-wider">
                 JOIN NOW
               </button>
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-                alt="Fitness Training" 
-                className="w-full object-cover rounded-lg"
+                src="https://images.unsplash.com/photo-1567013127542-490d757e51fc"
+                alt="Professional Bodybuilder" 
+                className="w-full h-[600px] object-cover rounded-lg brightness-90"
               />
             </div>
           </div>
@@ -55,7 +55,7 @@ const Index = () => {
 
       {/* Marquee */}
       <div className="marquee-container mt-12">
-        <div className="marquee-content py-4 text-black font-bold">
+        <div className="marquee-content py-4 text-black font-extrabold tracking-wider">
           <span className="mx-8">NEW VIDEOS DAILY</span>
           <span className="mx-8">BEGINNERS FRIENDLY</span>
           <span className="mx-8">LIVE CONSULTANCY</span>
